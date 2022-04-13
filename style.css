@@ -30,6 +30,11 @@ body {
     display: flex;
 }
 
+.logo-a.mobile{
+    display: none;
+    width: 32px;
+}
+
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -37,7 +42,7 @@ body {
     list-style: none;
 }
 
-.linkitems {
+.nav-links .linkitems {
     display: inline-block;
     text-decoration: none;
     margin-left: 25px;
@@ -339,6 +344,15 @@ h1 {
     }
     .linkitems i.active:before{
         content: "\f00d";
+    }
+
+    .logo-a.mobile{
+        display: inline-block;
+        width: 32px;
+    }
+
+    .logo-a{
+        display: none;
     }
 
     .nav .nav-links{
